@@ -1,0 +1,7 @@
+import numpy as np
+def trans(orig_mat):
+  final_mat = np.zeros(orig_mat.shape)
+  for i in range(len(orig_mat)):
+    for j in range(len(orig_mat)):
+      final_mat[j][i] = orig_mat[i][j]
+return final_mat
